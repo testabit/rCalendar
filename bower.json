@@ -1,11 +1,11 @@
 {
-    "name": "rCalendar",
+    "name": "rcalendar",
     "main":[
         "src/rcalendar/calendar.js",
         "css/rcalendar/calendar.css"
     ],
     "version": "0.0.1",
-    "homepage": "https://github.com/testabit/rCalendar",
+    "homepage": "https://github.com/testabit/rcalendar",
     "authors": [
         "Gabriel Anglada <gabriel.anglada@gmail.com>"
     ],
