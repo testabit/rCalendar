@@ -1,0 +1,27 @@
+{
+    "name": "rCalendar",
+    "main":[
+        "src/rcalendar/calendar.js",
+        "css/rcalendar/calendar.css"
+    ],
+    "version": "0.0.1",
+    "homepage": "https://github.com/testabit/rCalendar",
+    "authors": [
+        "Gabriel Anglada <gabriel.anglada@gmail.com>"
+    ],
+    "description": "rcalendar for angular",
+    "keywords": [
+        "calendar",
+        "angular",
+        "responsive"
+    ],
+    "license": "MIT",
+    "private": false,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
