@@ -1,9 +1,10 @@
-<div>
-    <table class="table table-bordered monthview-datetable monthview-datetable">
+<div class="calendar-container">
+    
+    <table class="table monthview-datetable monthview-datetable">
         <thead>
         <tr>
             <th ng-show="showWeeks" class="calendar-week-column text-center">#</th>
-            <th ng-repeat="label in labels track by $index" class="text-center">
+            <th ng-repeat="label in labels track by $index" class="text-center uppercase border-rm-all black-50">
                 <small>{{label}}</small>
             </th>
         </tr>
@@ -13,15 +14,16 @@
             <td ng-show="showWeeks" class="calendar-week-column text-center">
                 <small><em>{{ weekNumbers[$index] }}</em></small>
             </td>
-            <td ng-repeat="dt in row track by dt.date" class="monthview-dateCell" ng-click="select(dt.date)"
+            <td ng-repeat="dt in row track by dt.date" class="monthview-dateCell black-50" ng-click="select(dt.date)"
                 ng-class="{'text-center':true, 'monthview-current': dt.current&&!dt.selected&&!dt.hasEvent,'monthview-secondary-with-event': dt.secondary&&dt.hasEvent, 'monthview-primary-with-event':!dt.secondary&&dt.hasEvent&&!dt.selected, 'monthview-selected': dt.selected}">
-                <div ng-class="{'text-muted':dt.secondary}">
-                    {{dt.label}}
+                <div ng-class="{'text-muted':dt.secondary}" class="padding-top-20">
+                    <strong><small>{{dt.label}}</small></strong>
                 </div>
             </td>
         </tr>
         </tbody>
     </table>
+    
     <div ng-if="showEventDetail" class="event-detail-container">
         <div class="scrollable" style="height: 200px">
             <table class="table table-bordered table-striped table-fixed">
@@ -37,4 +39,5 @@
             </table>
         </div>
     </div>
+
 </div>
