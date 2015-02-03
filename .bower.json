@@ -1,0 +1,35 @@
+{
+  "name": "tab-rcalendar",
+  "main": [
+    "src/rcalendar/calendar.js",
+    "css/rcalendar/calendar.css"
+  ],
+  "homepage": "https://github.com/testabit/tab-rcalendar",
+  "authors": [
+    "Gabriel Anglada <gabriel.anglada@gmail.com>"
+  ],
+  "description": "rcalendar for angular",
+  "keywords": [
+    "calendar",
+    "angular",
+    "responsive"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "f07d7734b2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f07d7734b2ae3fb69ce66b0282f690bfac0896e5"
+  },
+  "_source": "git@github.com:testabit/tab-rcalendar.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:testabit/tab-rcalendar.git"
+}
